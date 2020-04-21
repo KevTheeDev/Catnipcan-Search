@@ -2,8 +2,10 @@ import React from 'react';
 import './NavigationBar.css'
 import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
-function App() {
-  return (
+class NavigationBar extends React.Component {
+    state = {}
+    render(){
+    return (
         <div className="navList">
             <nav> 
                 <ul>
@@ -20,8 +22,15 @@ function App() {
                     </li>
                 </ul>
             </nav>
+            <div>
+                <label> 
+                    <h3>Search</h3> 
+                    {/* <input placeholder="search cat species"> Search </input>   */}
+                </label>
+            </div>
+
         </div>
   );
 }
-
-export default App;
+}
+export default NavigationBar;

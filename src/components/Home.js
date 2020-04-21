@@ -4,8 +4,8 @@ import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom'
 
 function Home(){
     return(
-        <div>
-            <h1 className="hmpg"> Home Page  </h1>
+        <div className="hmpg" >
+            <h1> Home Page  </h1>
             <div>
                 {/* insert the  api here /> */}
             </div>
