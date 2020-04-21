@@ -4,7 +4,6 @@ import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom'
 
 function App() {
   return (
-
         <div className="navList">
             <nav> 
                 <ul>
@@ -17,16 +16,11 @@ function App() {
                     </li>
 
                     <li>
-                        <Link to="/UserProfile">UserProfile</Link>
-                    </li>
-
-                    <li>
-                        <Link to="/Login">Login</Link>
+                        <Link to="/UserProfile"> Random Cats of Kindness </Link>
                     </li>
                 </ul>
             </nav>
         </div>
-
   );
 }
 

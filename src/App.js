@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from './components/Home.js'
 import NavigationBar from './components/NavigationBar.js'
 
 
@@ -11,7 +12,7 @@ class App extends React.Component {
       <Router>
         <div className="App">  
           <NavigationBar />
-          {/* <Route exact path="/" component={Home} />  */}
+          <Route exact path="/" component={Home} /> 
           {/* <Route path="/Bookmarks" component={Bookmarks} />
           <Route exact path="/UserProfile" component={UserProfile} />   */}
         </div>
