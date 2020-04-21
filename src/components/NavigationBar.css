@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(43, 38, 38);
+}
+
 ul{
     list-style-type: none;
     overflow: hidden;
@@ -7,13 +11,12 @@ ul{
 li{
     float: left;
 }
- 
+
 .navList{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: aliceblue;
-
+    background-color: rgb(2, 44, 80);
 }
 
 li a{
