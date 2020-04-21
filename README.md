@@ -2,13 +2,13 @@ For the record I'm a dog person.
 
 Wireframe is located on the first page of this repository
 
-To run install:
-npm i react-router-dom
-npm i axios
+To run install:                                                                     
+npm i react-router-dom                                                                      
+npm i axios                                                         
 
 
 
-Purpose -
+Purpose -                                                                               
 Create a search website for cat lovers or just peole who want to look at cats
 
 
