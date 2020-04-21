@@ -21,7 +21,5 @@ Technical Problem Solution
  A user may be able to click on a cat's name/species and navigate to the the image of that cat or they can search for a cat and get an image, or use an arrow button to click to a random image )
 
 Technical Language
- - 0 - Does not demonstrate accurate programming language during the presentation
- - 1 - Uses language that demonstrates general programming concepts during presentation
- - 2 - Uses accurate programming terminology during presentation that demonstrates work ready skills.
+( The code will use async, await, fetch or axios.get to retrieve data from the API key. It will use many components to navigate through the navigation bar, the main page and other places. It will use onCllick / onSubmit functionc as well as the binding of the .this keyboard to refernece functions throughout the code in order so to have them render through the page(s).  )
 
