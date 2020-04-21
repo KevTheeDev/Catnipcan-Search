@@ -1,5 +1,7 @@
 For the record I'm a dog person.
 
+Wireframe is located on the first page of this repository
+
 To run install:
 npm i react-router-dom
 npm i axios
