@@ -6,7 +6,7 @@ Wireframe is located on the first page of this repository
 API Link - https://thecatapi.com/v1/images?api_key=aaa32b32-301f-40ad-8c62-a9054e33d188 
 
 To run install:                                                                     
-npm i react-router-dom                                                                      
+npm i react-router-dom                                                           
 npm i axios                                                         
 
 

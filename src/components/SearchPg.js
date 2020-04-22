@@ -11,6 +11,9 @@ function SearchPg(){
                 <input />
             </form>
             <div>
+                {/* make a modo create search pg with guidelines - landing */}
+               
+            {/* STATE AND FUNCTINAL COMPONENTS - api call 1 compm - 1nd search  bar needs state - all inside the README */}
                 {/* insert the  api here /> */}
 
             </div>
