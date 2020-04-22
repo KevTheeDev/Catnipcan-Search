@@ -20,6 +20,10 @@ class NavigationBar extends React.Component {
                     <li>
                         <Link to="/UserProfile"> Random Cats of Kindness </Link>
                     </li>
+                    
+                    <li>
+                        <Link to="/RandomGenerator"> Random Cats of Kindness </Link>
+                    </li>
                 </ul>
             </nav>
             <div>
