@@ -21,13 +21,18 @@ function Home(){
     return(
         <div className="hmpg" >
             <h1> Home Page  </h1>
-            <div>
-                <h4> All Your Furry Cuddly Needs </h4>
-                <p> Instructions: Click in the search bar at the top or middle of the page <br/>
-                    to find a specific cat or click on any of the above links in top menu, just for fun.
-                 </p>
-                {/* insert the  api here /> */}
-                
+                <div>
+                    <h4> All Your Furry Cuddly Needs </h4>
+                    <p> Instructions: Click in the search bar at the top or middle of the page <br/>
+                        to find a specific cat or click on any of the above links in top menu, just for fun.
+                    </p>
+
+                    <form>
+                        <label> Search </label>
+                        <input />
+                    </form>
+                    {/* insert the  api here /> */}
+                    
             </div>
         </div>
     )

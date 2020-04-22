@@ -6,10 +6,7 @@ function SearchPg(){
     return(
         <div className="hmpg" >
             <h1> Search Page  </h1>
-            <form>
-                <label> Search </label>
-                <input />
-            </form>
+
             <div>
                 {/* make a modo create search pg with guidelines - landing */}
                

@@ -8,3 +8,17 @@
 .hmpg{
     color: paleturquoise;
 }
+
+p{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    align-content: center;
+}
+
+label{
+    align-self: center;
+}

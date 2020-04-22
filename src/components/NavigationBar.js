@@ -23,10 +23,14 @@ class NavigationBar extends React.Component {
                 </ul>
             </nav>
             <div>
-                <label> 
-                    <h3>Search</h3> 
-                    {/* <input placeholder="search cat species"> Search </input>   */}
-                </label>
+                <form>
+                    <label> 
+                        <h3>Search</h3> 
+                        <input />
+                        {/* <input placeholder="search cat species"> Search </input>   */}
+                    </label>     
+                </form>
+                    
             </div>
 
         </div>
