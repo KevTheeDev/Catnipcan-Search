@@ -16,6 +16,41 @@ class App extends React.Component {
           <NavigationBar />
           <Route exact path="/" component={Home} /> 
           <Route path="/RandomGenerator" component={RandomGenerator} />
+          
+          
+          
+          
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <ThankYouBar />
         </div>
       </Router>
