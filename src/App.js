@@ -14,7 +14,6 @@ class App extends React.Component {
           <NaviBar />
           <Route exact path="/" component={Home} /> 
           <Route path="/RandomGenerator" component={RandomGenerator} />
-          {/* <Route exact path="/UserProfile" component={UserProfile} />   */}
         </div>
       </Router>
      );
