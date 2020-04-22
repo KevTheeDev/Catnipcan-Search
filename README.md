@@ -9,7 +9,7 @@ To run install:
 npm i react-router-dom                                                           
 npm i axios                                                         
 
-Stateless -                         
+Stateless components-                         
 1. About Page              
 2. Left Arrow Icon              
 3. Right Arrow Icon
