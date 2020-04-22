@@ -3,10 +3,7 @@ import NavigationBar from './components/NavigationBar.js'
 import RandomGenerator from './components/RandomGenerator.js'
 import Home from './components/Home.js'
 import SearchPg from './components/SearchPg.js'
-
-
-
-import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
+import { Route, BrowserRouter as Router} from 'react-router-dom';
 
 class App extends React.Component {
   state = {  }

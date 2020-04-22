@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Home.css'
-import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
+// import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
 function Home(){
 
@@ -9,7 +9,6 @@ function Home(){
     useEffect(() => {
         //return statement ()
         fetchCats ();
-        }
     }, [])
 
     const fetchCats = async () => {
