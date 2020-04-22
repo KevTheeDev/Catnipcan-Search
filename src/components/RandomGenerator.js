@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom'
 function RandomGenerator(){
     return(
         <React.Fragment>
-            <h3> RandomGenerator and user pics </h3>
+            <h3> Generate a random picture!</h3>
         </React.Fragment>
     )
 }

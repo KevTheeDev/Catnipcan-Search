@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ThankYou(){
+function ThankYouPg(){
     return(
         <React.Fragment>
             <h3> Thank You for Visiting! </h3>
@@ -8,4 +8,4 @@ function ThankYou(){
     )
 }
 
-export default ThankYou;
+export default ThankYouPg;

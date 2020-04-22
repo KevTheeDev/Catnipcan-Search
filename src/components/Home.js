@@ -12,7 +12,7 @@ function Home(){
     }, [])
 
     const fetchCats = async () => {
-        const data = await fetch ('https://thecatapi.com/v1/images?api_key=aaa32b32-301f-40ad-8c62-a9054e33d188')
+        const data = await fetch ('https://thecatapi.com/v1/images?api_key=4c63a8cd-ecf5-453c-b3c0-55c64aefd09e')
         
         const catems = await data.json();
         console.log(data);
