@@ -1,8 +1,8 @@
 import React from 'react';
 import NavigationBar from './components/NavigationBar.js'
-import Bookmarks from './components/Bookmarks.js'
+import RandomGenerator from './components/RandomGenerator.js'
 import Home from './components/Home.js'
-// import Bookmarks from './components/Bookmarks.js'
+import SearchPg from './components/SearchPg.js'
 
 
 
@@ -16,7 +16,7 @@ class App extends React.Component {
         <div className="App">  
           <NavigationBar />
           <Route exact path="/" component={Home} /> 
-          <Route path="/Bookmarks" component={Bookmarks} />
+          <Route path="/RandomGenerator" component={RandomGenerator} />
           {/* <Route exact path="/UserProfile" component={UserProfile} />   */}
         </div>
       </Router>

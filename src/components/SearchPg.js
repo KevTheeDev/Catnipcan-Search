@@ -6,8 +6,13 @@ function SearchPg(){
     return(
         <div className="hmpg" >
             <h1> Search Page  </h1>
+            <form>
+                <label> Search </label>
+                <input />
+            </form>
             <div>
                 {/* insert the  api here /> */}
+
             </div>
         </div>
     )
