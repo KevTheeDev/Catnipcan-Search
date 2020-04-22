@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationBar from './components/NavigationBar.js'
+import NaviBar from './components/NavigationBar.js'
 import RandomGenerator from './components/RandomGenerator.js'
 import Home from './components/Home.js'
 import SearchPg from './components/SearchPg.js'
@@ -11,7 +11,7 @@ class App extends React.Component {
     return ( 
       <Router>
         <div className="App">  
-          <NavigationBar />
+          <NaviBar />
           <Route exact path="/" component={Home} /> 
           <Route path="/RandomGenerator" component={RandomGenerator} />
           {/* <Route exact path="/UserProfile" component={UserProfile} />   */}

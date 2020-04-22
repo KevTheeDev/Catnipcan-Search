@@ -35,4 +35,5 @@ li a{
     /* padding creates space between the words */
     display: block;
     padding: 20px;
+    color: white;
 }

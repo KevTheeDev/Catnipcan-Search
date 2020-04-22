@@ -1,5 +1,5 @@
 import React from 'react'; 
-import './NavigationBar.css'
+import '../components/styles/NavigationBar.css'
 import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
 class NavigationBar extends React.Component {
