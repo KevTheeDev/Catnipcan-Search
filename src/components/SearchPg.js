@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css'
 import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
-function Home(){
+function SearchPg(){
     return(
         <div className="hmpg" >
             <h1> Search Page  </h1>
@@ -13,5 +13,5 @@ function Home(){
     )
 }
   
-export default Home;
+export default SearchPg;
  
