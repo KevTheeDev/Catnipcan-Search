@@ -15,6 +15,7 @@ Stateless -
 3. Right Arrow Icon
 4. Top Menu
 5. Thank You Page
+6. Thank You Bar (it's a bar at the bottom of the page)
 
 Stateful components -               
 1. Search Bars                             

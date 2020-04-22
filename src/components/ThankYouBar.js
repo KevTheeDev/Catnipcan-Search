@@ -11,7 +11,7 @@ class ThankYouBar extends React.Component {
             <nav> 
                 <ul>
                     <li>
-                        <Link to="/ThankYou"> Thank You </Link>
+                        <Link to="/ThankYouPg"> Thank You </Link>
                     </li>
                 </ul>
             </nav>
