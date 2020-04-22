@@ -9,7 +9,16 @@ To run install:
 npm i react-router-dom                                                           
 npm i axios                                                         
 
+Stateless -                         
+1. About Page              
+2. Left Arrow Icon              
+3. Right Arrow Icon
+4. Top Menu
+5. Thank You Page
 
+Stateful components -               
+1. Search Bars                             
+2. Home or About                         
 
 Purpose -                                                                               
 Create a search website for cat lovers or just peole who want to look at cats
