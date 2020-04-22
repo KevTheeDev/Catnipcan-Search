@@ -1,5 +1,6 @@
 body{
     background-color: rgb(43, 38, 38);
+    color: white;
 }
 
 ul{
@@ -10,6 +11,16 @@ ul{
 
 li{
     float: left;
+    color: white;
+}
+
+Link{
+ color: white;
+}
+
+Link:visited{
+    color: rgb(119, 13, 13);
+    font-style: oblique;
 }
 
 .navList{

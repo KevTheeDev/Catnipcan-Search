@@ -1,6 +1,7 @@
 For the record I'm a dog person.
 
 Wireframe is located on the first page of this repository
+![wireframe](./Wireframe-cat.png)
 
 To run install:                                                                     
 npm i react-router-dom                                                                      
