@@ -2,7 +2,6 @@ import React from 'react';
 import '../components/styles/NavigationBar.css'
 import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
-
 class ThankYouBar extends React.Component {
     state = {}
     render(){
