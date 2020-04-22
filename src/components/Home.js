@@ -7,6 +7,7 @@ function Home(){
         <div className="hmpg" >
             <h1> Home Page  </h1>
             <div>
+                <p> All Your Furry Cuddly Needs </p>
                 {/* insert the  api here /> */}
             </div>
         </div>
