@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../components/styles/Home.css'
+import axios from 'axios'
 // import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
 function Home(){
@@ -17,6 +18,7 @@ function Home(){
         const catems = await data.json();
         console.log(data);
     }
+
 
     return(
         <div className="hmpg" >
