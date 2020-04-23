@@ -19,23 +19,23 @@ class Home extends React.Component{
     // fetchCAts calls the api, concatonates breeds on to it, and cl's the data to test
     // a variable called catnames to name the things that appear in the console
     
-    componentDidMount () {
+    // const fetchCats = async () => {
+        
+        //     console.log(data);
+        // }
+        componentDidMount () {
+            // const data = await axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
         const breeds = 'breeds'
-        const fetchCats = async () => {
-            const data = await axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
 
-            console.log(data);
-        }
-
-        axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
+        const data = axios.get('https://api.thecatapi.com/v1/breeds')
         // callback function
         // res or response
         // res goes inside the object (data object) and gets the results (.results) that we need
         .then(res => {
-        const recipes = res.data.results;
-        console.log('recipe ----> ', recipes)
+        const name = res.data;
+        console.log('recipe ----> ', name)
 
-        this.setState({ data: recipes })
+        this.setState({ data: name })
         })
         .catch(error => {
         console.log('there is an error', error)
