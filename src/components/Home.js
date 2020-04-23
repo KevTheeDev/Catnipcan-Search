@@ -16,9 +16,9 @@ function Home(){
 
     const fetchCats = async () => {
         const dataTry = await fetch ('https://thecatapi.com/v1/images?api_key=')
-        const data = await fetch ('https://api.thecatapi.com/v1/breeds')
+        const data = await axios.get('https://api.thecatapi.com/v1/breeds')
         
-        const catems = await data.json();
+        // const catems = axios data.json();
         console.log(data);
     }
 
