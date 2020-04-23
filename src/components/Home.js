@@ -5,18 +5,21 @@ import axios from 'axios'
 
 function Home(){
 
+    // const categorieOp1 is to append on the baselink
+    const baseLink = 'https://thecatapi.com/v1/images?api_key='
+    const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
+    const categoriesOp1 = 'breeds'
+
     //useEffect func came with vscode or some sort of extension
     //({}) In useEffect <- means it only runs when the components mount
         // calls the fetchCat function
-    const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     useEffect(() => {
         //return statement ()
         fetchCats ();
     }, [])
 
     const fetchCats = async () => {
-        // const dataTry = await fetch ('https://thecatapi.com/v1/images?api_key=')
-        const data = await axios.get('https://api.thecatapi.com/v1/breeds')
+        const data = await axios.get('https://api.thecatapi.com/v1/' + 'breeds')
         
         // const catems = axios data.json();
         console.log(data);
