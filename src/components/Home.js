@@ -19,7 +19,7 @@ function Home(){
         console.log(data);
     }
 
-
+    
     return(
         <div className="hmpg" >
             <h1> Home Page  </h1>
@@ -28,17 +28,16 @@ function Home(){
                     <p> Instructions: Click in the search bar at the top or middle of the page <br/>
                         to find a specific cat or click on any of the above links in top menu, just for fun.
                     </p>
+                    <br/>
+                    <br/>
+                    <p> please click the dropdown menu to the left and search for a cat! </p>
 
-                    <form>
-                        <label> Search </label>
-                        <input />
-                    </form>
+
                     {/* insert the  api here /> */}
                     
             </div>
         </div>
     )
 }
- 
+
 export default Home;
- 
