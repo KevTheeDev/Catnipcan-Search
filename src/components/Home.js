@@ -24,13 +24,15 @@ class Home extends React.Component{
         //     console.log(data);
         // }
         componentDidMount () {
-            // const data = await axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
         const breeds = 'breeds'
 
-        const data = axios.get('https://api.thecatapi.com/v1/breeds')
+        const data = axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
         // callback function
         // res or response
         // res goes inside the object (data object) and gets the results (.results) that we need
+        // CLog the data
+        // setstate mutates the empty array of 'data' above with the current data from the api
+        // '.catch'es any errors
         .then(res => {
         const name = res.data;
         console.log('recipe ----> ', name)
