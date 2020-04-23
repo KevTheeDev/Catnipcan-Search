@@ -1,33 +1,48 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../components/styles/Home.css'
 import axios from 'axios'
 // import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
-function Home(){
- 
-    const [data, catNames] = useState([]);
+class Home extends React.Component{
+     state = { 
+        data: [],
+        catNames: []
+      }
 
     // const baseLink = 'https://thecatapi.com/v1/images?api_key='
     // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     // const breeds is to append on the baselink
-    const breeds = 'breeds'
-
+    
     //useEffect func came with vscode or some sort of extension
     //({}) in useEffect <- means it only runs when the components mount
-        // calls the fetchCat function
-            // fetchCAts calls the api, concatonates breeds on to it, and cl's the data to test
-            // a variable called catnames to name the things that appear in the console
-    useEffect(() => {
-        //return statement ()
-        fetchCats ();
-    }, [])
-
+    // calls the fetchCat function
+    // fetchCAts calls the api, concatonates breeds on to it, and cl's the data to test
+    // a variable called catnames to name the things that appear in the console
+    
+    componentDidMount () {
+    const breeds = 'breeds'
     const fetchCats = async () => {
         const data = await axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
 
         console.log(data);
-        catNames(data)
     }
+
+    axios.get("https://api.spoonacular.com/recipes/search?query=cheese&number=4&apiKey=27a02bbb5b48401f96bfda6a7d3e2545"
+    )
+    // callback function
+    // res or response
+    // res goes inside the object (data object) and gets the results (.results) that we need
+    .then(res => {
+      const recipes = res.data.results;
+      console.log('recipe ----> ', recipes)
+
+      this.setState({ data: recipes })
+    })
+    .catch(error => {
+      console.log('there is an error', error)
+    })
+  }
+}
 
     
     return(
