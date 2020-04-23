@@ -40,3 +40,9 @@ Technical Language
 ( The code will use async, await, fetch or axios.get to retrieve data from the API key. It will use many components to navigate through the navigation bar, the main page and other places. It will use onCllick / onSubmit functionc as well as the binding of the .this keyboard to refernece functions throughout the code in order so to have them render through the page(s).  )
 
  
+
+                        REFERENCE
+a. minute mark - mm()
+
+1. Rendering API console mm(maybe 17:00)
+https://www.youtube.com/watch?v=Law7wfdg_ls&t=585s
