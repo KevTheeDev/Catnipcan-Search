@@ -6,14 +6,16 @@ import axios from 'axios'
 function Home(){
 
     //useEffect func came with vscode or some sort of extension
-    //({}) <- means it only runs when the components mount
+    //({}) In useEffect <- means it only runs when the components mount
+        // calls the fetchCat function
+    const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     useEffect(() => {
         //return statement ()
         fetchCats ();
     }, [])
 
     const fetchCats = async () => {
-        const data = await fetch ('https://thecatapi.com/v1/images?api_key=4c63a8cd-ecf5-453c-b3c0-55c64aefd09e')
+        const data = await fetch ('https://thecatapi.com/v1/images?api_key=')
         
         const catems = await data.json();
         console.log(data);
