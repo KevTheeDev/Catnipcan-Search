@@ -20,31 +20,29 @@ class Home extends React.Component{
     // a variable called catnames to name the things that appear in the console
     
     componentDidMount () {
-    const breeds = 'breeds'
-    const fetchCats = async () => {
-        const data = await axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
+        const breeds = 'breeds'
+        const fetchCats = async () => {
+            const data = await axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
 
-        console.log(data);
+            console.log(data);
+        }
+
+        axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
+        // callback function
+        // res or response
+        // res goes inside the object (data object) and gets the results (.results) that we need
+        .then(res => {
+        const recipes = res.data.results;
+        console.log('recipe ----> ', recipes)
+
+        this.setState({ data: recipes })
+        })
+        .catch(error => {
+        console.log('there is an error', error)
+        })
     }
-
-    axios.get("https://api.spoonacular.com/recipes/search?query=cheese&number=4&apiKey=27a02bbb5b48401f96bfda6a7d3e2545"
-    )
-    // callback function
-    // res or response
-    // res goes inside the object (data object) and gets the results (.results) that we need
-    .then(res => {
-      const recipes = res.data.results;
-      console.log('recipe ----> ', recipes)
-
-      this.setState({ data: recipes })
-    })
-    .catch(error => {
-      console.log('there is an error', error)
-    })
-  }
-}
-
     
+    render (){
     return(
         <div className="hmpg" >
             <h1> Home Page  </h1>
@@ -62,7 +60,7 @@ class Home extends React.Component{
                     
             </div>
         </div>
-    )
+    )}
 }
 
 export default Home;
