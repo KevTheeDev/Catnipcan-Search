@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
+// import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
 function RandomGenerator(){
     return(

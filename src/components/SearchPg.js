@@ -1,6 +1,6 @@
 import React from 'react';
 // import './Home.css'
-import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
+// import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
 
 function SearchPg(){
     return(

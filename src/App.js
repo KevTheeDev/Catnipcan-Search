@@ -4,8 +4,7 @@ import RandomGenerator from './components/RandomGenerator.js'
 import Home from './components/Home.js'
 import ThankYouBar from './components/ThankYouBar.js'
 import ThankYouPg from './components/ThankYouPg.js';
-
-import SearchPg from './components/SearchPg.js'
+// import SearchPg from './components/SearchPg.js'
 import { Route, BrowserRouter as Router} from 'react-router-dom';
 
 class App extends React.Component {
