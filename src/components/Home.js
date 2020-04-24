@@ -18,11 +18,7 @@ class Home extends React.Component{
     // calls the fetchCat function
     // fetchCAts calls the api, concatonates breeds on to it, and cl's the data to test
     // a variable called catnames to name the things that appear in the console
-    
-    // const fetchCats = async () => {
-        
-        //     console.log(data);
-        // }
+
         componentDidMount () {
         const breeds = 'breeds'
 
