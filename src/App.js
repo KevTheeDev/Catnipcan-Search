@@ -17,7 +17,7 @@ class App extends React.Component {
           <Route exact path="/" component={Home} /> 
           <Route path="/RandomGenerator" component={RandomGenerator} />
           <Route exact path="/ThankYouPg" component={ThankYouPg}/>
-          
+          <Route path="/SearchPg:id" component={}
           
           
           
