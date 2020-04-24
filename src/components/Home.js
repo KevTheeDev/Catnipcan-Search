@@ -16,7 +16,7 @@ class Home extends React.Component{
         componentDidMount () {
         const breeds = 'breeds'
 
-        axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
+        axios.get(`https://api.thecatapi.com/v1/${breeds}`)
         // callback function
         // res or response
         // res goes inside the object (data object) and gets the results (.results) that we need
