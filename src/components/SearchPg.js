@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css'
 import axios from 'axios'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 // 1. React Router Tutorial
 function SearchPg ({ match }){
@@ -19,7 +19,7 @@ function SearchPg ({ match }){
 
     const getAxiosImage = async () => {
         const images = 'images/search';
-        const data = await axios.get(`https://api.thecatapi.com/v1/${images}`)
+        await axios.get(`https://api.thecatapi.com/v1/${images}`)
     }
     
     // {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}
