@@ -56,4 +56,23 @@ Ex.
     // fetchCAts calls the api, concatonates breeds on to it, and cl's the data to test
     // a variable called catnames to name the things that appear in the console
 
+    function SearchPg ({ match }){
+     useEffect(() => {
+             getAxiosImage();
+             console.log( match )
+     }, [])
+
+     // this seems to be another version of state / this.state 
+     const [ data, catImages ] = useState({});
+
+    // const baseLink = 'https://thecatapi.com/v1/images?api_key='
+    // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
+    // const breeds is to append on the baselink
+
+    const getAxiosImage = async () => {
+        // const images = 'images/search';
+        const images = await axios.get(`https://api.thecatapi.com/v1/breeds`)
+        // await axios.get(`https:thecatapi.com/v1/images/search?api_key=${match}`)
+    }
+
 2. 

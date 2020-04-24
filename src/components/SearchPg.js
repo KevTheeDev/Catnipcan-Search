@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css'
 import axios from 'axios'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // 1. React Router Tutorial
     // match keyword singles out a specific result, from a call, from a specific API 
@@ -18,9 +18,9 @@ function SearchPg ({ match }){
     // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     // const breeds is to append on the baselink
 
-    const getAxiosImage = async ( match ) => {
+    const getAxiosImage = async () => {
         // const images = 'images/search';
-        const images = await axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=${match.params.id}`)
+        const images = await axios.get(`https://api.thecatapi.com/v1/breeds`)
         // await axios.get(`https:thecatapi.com/v1/images/search?api_key=${match}`)
     }
 
@@ -32,7 +32,7 @@ function SearchPg ({ match }){
             <h1> Search Results  </h1>
                 <div>
                     <h4> 
-                        <p> </p>
+                        <p> {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > <Link to={`/SearchPg/${id}`}> {catNames.name} </Link> </li> </ul> )} </p>
                     </h4>                        
             </div>
         </div>
