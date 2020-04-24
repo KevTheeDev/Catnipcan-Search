@@ -22,7 +22,7 @@ class App extends React.Component {
           <Route exact path="/ThankYouPg" component={ThankYouPg}/>
           {/* this is only for fluff I actually don't need it as of yet */}
           {/* <Route path="/SearchPg" component={SearchPg} />   */}
-          <Route exact path="/SearchPg/:idoct" component={SearchPg} />
+          <Route exact path="/SearchPg/:id" component={SearchPg} />
           
           
           

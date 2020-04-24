@@ -20,10 +20,10 @@ function SearchPg ({ match }){
 
     const getAxiosImage = async (match) => {
         // const images = 'images/search';
-        await axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=%93`)
+        const images = await axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=`)
         // await axios.get(`https:thecatapi.com/v1/images/search?api_key=${match}`)
     }
-    
+
     // {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}
     // {/* map ( => <li> To Return The List Item (in this case, for the catNames) <li>) */}
     // {/* ul is neede around <li> in order for a list to be created */}
