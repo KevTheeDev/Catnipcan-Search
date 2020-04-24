@@ -12,12 +12,6 @@ class Home extends React.Component{
     // const baseLink = 'https://thecatapi.com/v1/images?api_key='
     // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     // const breeds is to append on the baselink
-    
-    //useEffect func came with vscode or some sort of extension
-    //({}) in useEffect <- means it only runs when the components mount
-    // calls the fetchCat function
-    // fetchCAts calls the api, concatonates breeds on to it, and cl's the data to test
-    // a variable called catnames to name the things that appear in the console
 
         componentDidMount () {
         const breeds = 'breeds'

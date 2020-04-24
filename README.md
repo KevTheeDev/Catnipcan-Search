@@ -44,6 +44,16 @@ Technical Language
                         REFERENCE
 a. minute mark - mm()
 
-1. Rendering API console mm(maybe 17:00)
+1. https://www.youtube.com/watch?v=Law7wfdg_ls&t=585s 
+
+Rendering API console mm(maybe 17:00)
 Could only use his ideas / paths and not his actual code
-https://www.youtube.com/watch?v=Law7wfdg_ls&t=585s
+
+Ex.     
+    //useEffect func came with vscode or some sort of extension
+    //({}) in useEffect <- means it only runs when the components mount
+    // calls the fetchCat function
+    // fetchCAts calls the api, concatonates breeds on to it, and cl's the data to test
+    // a variable called catnames to name the things that appear in the console
+
+2. 
