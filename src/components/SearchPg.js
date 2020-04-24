@@ -14,14 +14,30 @@ class SearchPg extends React.Component{
     // const breeds is to append on the baselink
 
     getAxiosImage () {
-        const images = 'images'
+        const images = 'images/search'
         const data = axios.get(`https://api.thecatapi.com/v1/` + `${images}`)
+
+        // callback function
+        // res or response
+        // res goes inside the object (data object) and gets the results (.results) that we need
+        // CLog the data
+        // setstate mutates the empty array of 'data' above with the current data from the api
+        // '.catch'es any errors
+        .then(res => {
+        const searchName = res.data;
+        console.log('catsearchNames ----> ', searchName)
+
+        this.setState({ data: searchName })
+        })
+        .catch(error => {
+        console.log('there is an error', error)
+        })
     }
     
     render (){
     return(
         <div className="hmpg" >
-            <h1> Search Page  </h1>
+            <h1> Search Results  </h1>
                 <div>
                     {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}
                     {/* map ( => <li> To Return The List Item (in this case, for the catNames) <li>) */}
