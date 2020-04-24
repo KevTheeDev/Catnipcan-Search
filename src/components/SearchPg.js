@@ -13,9 +13,9 @@ class SearchPg extends React.Component{
     // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     // const breeds is to append on the baselink
 
-    getAxiosCall () {
-        const breeds = 'breeds'
-        const data = axios.get(`https://api.thecatapi.com/v1/` + `${breeds}`)
+    getAxiosImage () {
+        const images = 'images'
+        const data = axios.get(`https://api.thecatapi.com/v1/` + `${images}`)
     }
     
     render (){
@@ -28,7 +28,6 @@ class SearchPg extends React.Component{
                     {/* ul is neede around <li> in order for a list to be created */}
                     <h4> 
                         <p> </p>
-                        {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > <Link to={`/SearchPg/${id}`}> {catNames.name} </Link> </li> </ul> )} 
                     </h4>                        
             </div>
         </div>
