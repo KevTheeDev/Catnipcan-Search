@@ -4,7 +4,7 @@ import RandomGenerator from './components/RandomGenerator.js'
 import Home from './components/Home.js'
 import ThankYouBar from './components/ThankYouBar.js'
 import ThankYouPg from './components/ThankYouPg.js';
-// import SearchPg from './components/SearchPg.js'
+import SearchPg from './components/SearchPg.js'
 import { Route, BrowserRouter as Router} from 'react-router-dom';
 
 class App extends React.Component {
@@ -14,10 +14,14 @@ class App extends React.Component {
       <Router>
         <div className="App">  
           <NavigationBar />
+          {/* Routes take me to a specific page*/}
+            {/* exact path means the route takes me to exactly that page and nowhere else, so there is no mixup */}
+            {/* component={ take me to the component/pg creater by the developer } */}
           <Route exact path="/" component={Home} /> 
           <Route path="/RandomGenerator" component={RandomGenerator} />
           <Route exact path="/ThankYouPg" component={ThankYouPg}/>
-          <Route path="/SearchPg:id" component={} />
+          <Route path="/SearchPg:id" component={SearchPg} />
+          <Route path="/SearchPg:id" component={SearchPg} />
           
           
           
