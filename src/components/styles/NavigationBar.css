@@ -23,7 +23,7 @@ Link:visited{
     font-style: oblique;
 }
 
-.navList{
+.nav-list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

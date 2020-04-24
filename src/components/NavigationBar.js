@@ -6,7 +6,7 @@ class NavigationBar extends React.Component {
     state = {}
     render(){
     return (
-        <div className="navList">
+        <div className="nav-list">
             <nav> 
                 <ul>
                     <li>
