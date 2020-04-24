@@ -35,7 +35,7 @@ class Home extends React.Component{
         // '.catch'es any errors
         .then(res => {
         const name = res.data;
-        console.log('catTings ----> ', name)
+        console.log('catNames ----> ', name)
 
         this.setState({ data: name })
         })
@@ -53,7 +53,7 @@ class Home extends React.Component{
                         <br/>
                         <br/>
                         <h3> Instructions please click the dropdown menu below to the left and search for a cat! </h3>
-
+    <h4> {this.state.data.map((catNames, id) => <li key={id} > {name} </li>)} </h4>
 
                         {/* insert the  api here /> */}
                     
