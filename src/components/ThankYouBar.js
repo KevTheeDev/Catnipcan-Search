@@ -10,6 +10,7 @@ class ThankYouBar extends React.Component {
             <nav> 
                 <ul>
                     <li>
+                        {/* makes a link to this thank you pg .js */}
                         <Link to="/ThankYouPg"> Thank You </Link>
                     </li>
                 </ul>

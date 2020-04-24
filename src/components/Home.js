@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../components/styles/Home.css'
 import axios from 'axios'
-// import { Route, BrowserRouter as Router, Link, Switch, } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component{
      state = { 
@@ -56,6 +56,7 @@ class Home extends React.Component{
                         {/* map ( => <li> To Return The List Item (in this case, for the catNames) <li>) */}
                         {/* ul is neede around <li> in order for a list to be created */}
                         <h3> Instructions please click the dropdown menu below or in the upper left corner of the page and search for a cat! </h3>
+                        <Link to="">  </Link>
                         <h4> {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > {catNames.name} </li> </ul>)} </h4>
                     
             </div>
