@@ -42,9 +42,6 @@ class Home extends React.Component{
         .catch(error => {
         console.log('there is an error', error)
         })
-
-        const [dataSet, setData] = useState([]);
-        setData(this.state.data)
     }
     
     render (){
@@ -56,7 +53,7 @@ class Home extends React.Component{
                         <br/>
                         <br/>
                         <h3> Instructions please click the dropdown menu below to the left and search for a cat! </h3>
-    <h4> {this.state.data.map((catNames, id) => <li key={id} > {this.state.name} </li>)} </h4>
+    <h4> {this.state.data.map((catNames, id) => <li key={id} > {this.setState.name} </li>)} </h4>
 
                         {/* insert the  api here /> */}
                     
