@@ -14,14 +14,15 @@ class App extends React.Component {
       <Router>
         <div className="App">  
           <NavigationBar />
-          {/* Routes take me to a specific page*/}
+          {/* Route path take me to a specific page */}
             {/* exact path means the route takes me to exactly that page and nowhere else, so there is no mixup */}
             {/* component={ take me to the component/pg creater by the developer } */}
           <Route exact path="/" component={Home} /> 
           <Route path="/RandomGenerator" component={RandomGenerator} />
           <Route exact path="/ThankYouPg" component={ThankYouPg}/>
-          <Route path="/SearchPg:id" component={SearchPg} />
-          <Route path="/SearchPg:id" component={SearchPg} />
+          {/* this is only for fluff I actually don't need it as of yet */}
+          <Route path="/SearchPg" component={SearchPg} />  
+          <Route exact path="/SearchPg:id" component={SearchPg} />
           
           
           

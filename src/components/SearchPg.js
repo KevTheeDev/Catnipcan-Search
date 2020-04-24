@@ -23,12 +23,13 @@ class SearchPg extends React.Component{
         <div className="hmpg" >
             <h1> Search Page  </h1>
                 <div>
-                        {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}
-                        {/* map ( => <li> To Return The List Item (in this case, for the catNames) <li>) */}
-                        {/* ul is neede around <li> in order for a list to be created */}
-                        <h4> 
-                            {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > <Link to={`/SearchPg/${id}`}> {catNames.name} </Link> </li> </ul> )} 
-                        </h4>                        
+                    {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}
+                    {/* map ( => <li> To Return The List Item (in this case, for the catNames) <li>) */}
+                    {/* ul is neede around <li> in order for a list to be created */}
+                    <h4> 
+                        <p> </p>
+                        {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > <Link to={`/SearchPg/${id}`}> {catNames.name} </Link> </li> </ul> )} 
+                    </h4>                        
             </div>
         </div>
     )}
