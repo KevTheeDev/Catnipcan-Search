@@ -35,7 +35,7 @@ class Home extends React.Component{
         // '.catch'es any errors
         .then(res => {
         const name = res.data;
-        console.log('recipe ----> ', name)
+        console.log('catTings ----> ', name)
 
         this.setState({ data: name })
         })
@@ -50,15 +50,12 @@ class Home extends React.Component{
             <h1> Home Page  </h1>
                 <div>
                     <h4> All Your Furry Cuddly Needs </h4>
-                    <p> Instructions: Click in the search bar at the top or middle of the page <br/>
-                        to find a specific cat or click on any of the above links in top menu, just for fun.
-                    </p>
-                    <br/>
-                    <br/>
-                    <p> please click the dropdown menu to the left and search for a cat! </p>
+                        <br/>
+                        <br/>
+                        <h3> Instructions please click the dropdown menu below to the left and search for a cat! </h3>
 
 
-                    {/* insert the  api here /> */}
+                        {/* insert the  api here /> */}
                     
             </div>
         </div>
