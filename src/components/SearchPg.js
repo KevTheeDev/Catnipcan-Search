@@ -4,6 +4,7 @@ import axios from 'axios'
 // import { Link } from 'react-router-dom';
 
 // 1. React Router Tutorial
+    // match keyword singles out a specific result, from a call, from a specific API 
 function SearchPg ({ match }){
      useEffect(() => {
              getAxiosImage();
@@ -17,9 +18,10 @@ function SearchPg ({ match }){
     // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     // const breeds is to append on the baselink
 
-    const getAxiosImage = async () => {
-        const images = 'images/search';
-        await axios.get(`https://api.thecatapi.com/v1/${images}`)
+    const getAxiosImage = async (match) => {
+        // const images = 'images/search';
+        await axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=%93`)
+        // await axios.get(`https:thecatapi.com/v1/images/search?api_key=${match}`)
     }
     
     // {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}

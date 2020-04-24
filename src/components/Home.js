@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 class Home extends React.Component{
      state = { 
         data: [],
-        catNames: []
       }
 
     // const baseLink = 'https://thecatapi.com/v1/images?api_key='
@@ -48,7 +47,7 @@ class Home extends React.Component{
                         <br/>
                         <h3> Instructions please click the dropdown menu below or in the upper left corner of the page and search for a cat! </h3>
                         <h4> 
-                            {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > <Link to={`/SearchPg/${id}`}> {catNames.name} </Link> </li> </ul> )} 
+                            {this.state.data.map((catNames, idoct) => <ul key={idoct}> <li key={idoct} > <Link to={`/SearchPg/${idoct}`}> {catNames.name} </Link> </li> </ul> )} 
                         </h4>
                                             
             </div>
