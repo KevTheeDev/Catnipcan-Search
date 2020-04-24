@@ -18,7 +18,7 @@ function SearchPg ({ match }){
     // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     // const breeds is to append on the baselink
 
-    const getAxiosImage = async () => {
+    const getAxiosImage = async ( match ) => {
         // const images = 'images/search';
         const images = await axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=${match.params.id}`)
         // await axios.get(`https:thecatapi.com/v1/images/search?api_key=${match}`)
