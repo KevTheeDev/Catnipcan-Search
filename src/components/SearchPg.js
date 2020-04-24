@@ -1,40 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Home.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 
-class SearchPg extends React.Component{
-     state = { 
-        data: [],
-        catNames: []
-      }
+function SearchPg ({  }){
+     useEffect(() => {
+             getAxiosImage();
+
+     }, [])
+
+    // data: [],
+    // catNames: []
 
     // const baseLink = 'https://thecatapi.com/v1/images?api_key='
     // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
     // const breeds is to append on the baselink
 
-    getAxiosImage () {
-        const images = 'images/search'
+    const getAxiosImage = async () => {
+        const images = 'images/search';
         const data = axios.get(`https://api.thecatapi.com/v1/` + `${images}`)
-
-        // callback function
-        // res or response
-        // res goes inside the object (data object) and gets the results (.results) that we need
-        // CLog the data
-        // setstate mutates the empty array of 'data' above with the current data from the api
-        // '.catch'es any errors
-        .then(res => {
-        const searchName = res.data;
-        console.log('catsearchNames ----> ', searchName)
-
-        this.setState({ data: searchName })
-        })
-        .catch(error => {
-        console.log('there is an error', error)
-        })
     }
     
-    render (){
     return(
         <div className="hmpg" >
             <h1> Search Results  </h1>
@@ -47,7 +33,7 @@ class SearchPg extends React.Component{
                     </h4>                        
             </div>
         </div>
-    )}
+    )
 }
  
 export default SearchPg;

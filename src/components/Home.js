@@ -34,6 +34,10 @@ class Home extends React.Component{
         })
     }
     
+    // {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}
+    // {/* map ( => <li> To Return The List Item (in this case, for the catNames) <li>) */}
+    // {/* ul is neede around <li> in order for a list to be created */}
+
     render (){
     return(
         <div className="hmpg" >
@@ -42,9 +46,6 @@ class Home extends React.Component{
                     <h4> All Your Furry Cuddly Needs </h4>
                         <br/>
                         <br/>
-                        {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}
-                        {/* map ( => <li> To Return The List Item (in this case, for the catNames) <li>) */}
-                        {/* ul is neede around <li> in order for a list to be created */}
                         <h3> Instructions please click the dropdown menu below or in the upper left corner of the page and search for a cat! </h3>
                         <h4> 
                             {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > <Link to={`/SearchPg/${id}`}> {catNames.name} </Link> </li> </ul> )} 
@@ -54,5 +55,5 @@ class Home extends React.Component{
         </div>
     )}
 }
- 
+
 export default Home;
