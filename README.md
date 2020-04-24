@@ -45,4 +45,5 @@ Technical Language
 a. minute mark - mm()
 
 1. Rendering API console mm(maybe 17:00)
+Could only use his ideas / paths and not his actual code
 https://www.youtube.com/watch?v=Law7wfdg_ls&t=585s
