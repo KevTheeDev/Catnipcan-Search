@@ -52,10 +52,10 @@ class Home extends React.Component{
                     <h4> All Your Furry Cuddly Needs </h4>
                         <br/>
                         <br/>
+                        {/* id is used to get rid of the errors on the console to make a specific key for each unique variable */}
+                        {/* map ( => <li> To Return The List Item (in this case, for the recipe) <li>) */}
                         <h3> Instructions please click the dropdown menu below to the left and search for a cat! </h3>
-                        <h4> {this.state.data.map((catNames, id) => <li key={id} > {catNames.name} </li>)} </h4>
-
-                        {/* insert the  api here /> */}
+                        <h4> {this.state.data.map((catNames, id) => <ul> <li key={id} > {catNames.name} </li> </ul>)} </h4>
                     
             </div>
         </div>
