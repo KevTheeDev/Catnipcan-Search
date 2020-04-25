@@ -6,18 +6,23 @@ import { Link } from 'react-router-dom';
 // 1. React Router Tutorial
     // match keyword singles out a specific result, from a call, from a specific API 
     class SearchPg extends React.Component{
-        state = { 
-           data: [],
+        constructor(props){
+            super(props)
+        
+        this.state = { 
+           catImage: '',
          }
-   
+        }
+        //  const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
        // const baseLink = 'https://thecatapi.com/v1/images?api_key='
-       // const catKEY = '4c63a8cd-ecf5-453c-b3c0-55c64aefd09e'
        // const breeds is to append on the baselink
+       
+       componentDidMount () {
+           const images = axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=${this.state.catImage}`)
+
+           //https://api.thecatapi.com/v1/images/search?breed_ids=srex
    
-           componentDidMount () {
-           const breeds = 'breeds'
-   
-           axios.get(`https://api.thecatapi.com/v1/${breeds}`)
+           
            // callback function
            // res or response
            // res goes inside the object (data object) and gets the results (.results) that we need
@@ -25,10 +30,10 @@ import { Link } from 'react-router-dom';
            // setstate mutates the empty array of 'data' above with the current data from the api
            // '.catch'es any errors
            .then(res => {
-           const name = res.data;
-           console.log('catNames ----> ', name)
+           const image = res.data.breed_ids;
+           console.log('catNames ----> ', image)
    
-           this.setState({ data: name })
+           this.setState({ catImage: image.breed_ids })
            })
            .catch(error => {
            console.log('there is an error', error)
@@ -47,10 +52,9 @@ import { Link } from 'react-router-dom';
                        <h4> All Your Furry Cuddly Needs </h4>
                            <br/>
                            <br/>
-                           <h3> Instructions please click the dropdown menu below or in the upper left corner of the page and search for a cat! </h3>
-                           <h4> 
-                               {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > <Link to={`/SearchPg/${id}`}> {catNames.name} </Link> </li> </ul> )} 
-                           </h4>
+                           <img src={this.state.catImage}/>
+                           <p>  
+                           </p>
                                                
                </div>
            </div>
