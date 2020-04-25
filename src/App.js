@@ -5,6 +5,7 @@ import Home from './components/Home.js'
 import ThankYouBar from './components/ThankYouBar.js'
 import ThankYouPg from './components/ThankYouPg.js';
 import SearchPg from './components/SearchPg.js'
+import About from './components/About.js';
 import { Route, BrowserRouter as Router} from 'react-router-dom';
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route path="/RandomGenerator" component={RandomGenerator} />
           <Route exact path="/ThankYouPg" component={ThankYouPg} />
           <Route exact path="/SearchPg/:id" component={SearchPg} />
+          {/* <Route exact path="/About" component={About} /> */}
           
           
           
