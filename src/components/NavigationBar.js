@@ -10,7 +10,7 @@ class NavigationBar extends React.Component {
             <nav> 
                 <ul>
                     <li>
-                        <Link to="/Bookmarks"> About </Link>
+                        <Link to="/About"> About </Link>
                     </li>
 
                     <li>

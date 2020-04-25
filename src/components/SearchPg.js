@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css'
 import axios from 'axios'
-import { Link } from 'react-router-dom';
 
 // 1. React Router Tutorial
     // match keyword singles out a specific result, from a call, from a specific API 
@@ -17,8 +16,8 @@ import { Link } from 'react-router-dom';
        // const baseLink = 'https://thecatapi.com/v1/images?api_key='
        // const breeds is to append on the baselink
        
-       componentDidMount () {
-           const images = axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=${this.state.catImage}`)
+       async componentDidMount () {
+           const images = await axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=`)
 
            //https://api.thecatapi.com/v1/images/search?breed_ids=srex
    
@@ -30,10 +29,10 @@ import { Link } from 'react-router-dom';
            // setstate mutates the empty array of 'data' above with the current data from the api
            // '.catch'es any errors
            .then(res => {
-           const image = res.data.breed_ids;
+           const image = res.data[0].url;
            console.log('catNames ----> ', image)
    
-           this.setState({ catImage: image.breed_ids })
+           this.setState({ catImage: image })
            })
            .catch(error => {
            console.log('there is an error', error)
