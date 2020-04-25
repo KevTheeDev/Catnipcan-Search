@@ -48,7 +48,7 @@ import axios from 'axios'
            <div className="hmpg" >
                <h1> Search Page  </h1>
                    <div>
-                       <h4> All Your Furry Cuddly Needs </h4>
+                       <h4> Refresh the page to generate a new image </h4>
                            <br/>
                            <br/>
                            <img src={this.state.catImage}/>
