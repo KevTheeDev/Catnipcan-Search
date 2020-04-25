@@ -23,7 +23,7 @@ class App extends React.Component {
           <Route exact path="/" component={Home} /> 
           <Route path="/RandomGenerator" component={RandomGenerator} />
           <Route exact path="/ThankYouPg" component={ThankYouPg} />
-          <Route exact path="/SearchPg/:id" component={SearchPg} />
+          <Route exact path="/RandomGenerator/:id" component={RandomGenerator} />
           {/* <Route exact path="/About" component={About} /> */}
           
           
