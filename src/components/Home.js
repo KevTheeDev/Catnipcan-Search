@@ -45,7 +45,7 @@ class Home extends React.Component{
                     <h4> All Your Furry Cuddly Needs </h4>
                         <br/>
                         <br/>
-                        <h3> Instructions please click the dropdown menu below or in the upper left corner of the page and search for a cat! </h3>
+                        <h3> Instructions please click the menu below or in the upper left corner of the page and search for a cat! </h3>
                         <h4> 
                             {this.state.data.map((catNames, id) => <ul key={id}> <li key={id} > <Link to={`/SearchPg/:id${id}`}> {catNames.name} </Link> </li> </ul> )} 
                         </h4>
