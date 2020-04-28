@@ -19,16 +19,16 @@ npm i react-router-dom
 npm i axios                                                         
 
 Stateless components-                         
-1. About Page              
-2. Left Arrow Icon              
-3. Right Arrow Icon
-4. Top Menu
-5. Thank You Page
-6. Thank You Bar (it's a bar at the bottom of the page)
+1. Top Menu
+2. Home Page (selection page)
+3. Thank You Page
+4. Thank You Bar (it's a bar at the bottom of the page)
+5. About Page              
 
 Stateful components -               
-1. Search Bars                             
-2. Home or About                         
+1. Random Image Generator Page        
+2. Search Bar / Search Page
+
 
 Purpose -                                                                               
 Create a search website for cat lovers or just peole who want to look at cats
