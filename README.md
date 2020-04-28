@@ -1,6 +1,6 @@
 For the record I'm a dog person.
 
-Wireframe is located on the first page of this repository
+Wireframes are located on the first page of this repository
 ![wireframe](./Wireframe-catPg1.png)
 
 
