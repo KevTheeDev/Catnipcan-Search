@@ -3,13 +3,13 @@ For the record I'm a dog person.
 Wireframe is located on the first page of this repository
 ![wireframe](./Wireframe-catPg1.png)
 
-Wireframe is located on the first page of this repository
+
 ![wireframe](./Wireframe-catPg2.png)
 
-Wireframe is located on the first page of this repository
+
 ![wireframe](./Wireframe-catPg3.png)
 
-Wireframe is located on the first page of this repository
+
 ![wireframe](./Wireframe-catPg4.png)
 
 API Link - https://thecatapi.com/v1/images?api_key=aaa32b32-301f-40ad-8c62-a9054e33d188 
